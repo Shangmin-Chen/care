@@ -1,0 +1,5 @@
+com/example/care/entity/Entry.class
+com/example/care/repository/EntryRepository.class
+com/example/care/CareApplication.class
+com/example/care/controller/EntryController.class
+com/example/care/service/EntryService.class
