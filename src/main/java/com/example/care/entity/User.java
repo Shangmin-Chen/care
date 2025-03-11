@@ -1,15 +1,31 @@
+// User.java
 package com.example.care.entity;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-@Data
+@Table(name = "users") // Non-reserved name
 public class User {
     @Id
-    @Column(unique = true, nullable = false)
     private String email;
+    private String googleId;
 
-    @Column(unique = true)
-    private String googleId; // Optional, for OAuth integration
+    // Getters and setters
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGoogleId() {
+        return googleId;
+    }
+
+    public void setGoogleId(String googleId) {
+        this.googleId = googleId;
+    }
 }
