@@ -19,4 +19,14 @@ public class AuthController {
     public ResponseEntity<String> logoutSuccess() {
         return ResponseEntity.ok("Logout successful");
     }
+
+    @GetMapping("/public")
+    public ResponseEntity<String> publicEndpoint() {
+        return ResponseEntity.ok("This is public");
+    }
+
+    @GetMapping("/error")
+    public ResponseEntity<String> error() {
+        return ResponseEntity.status(400).body("OAuth login failed");
+    }
 }
