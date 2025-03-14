@@ -6,10 +6,12 @@
 /Users/shangminchen/care/src/main/java/com/example/care/controller/TreeController.java
 /Users/shangminchen/care/src/main/java/com/example/care/controller/UserController.java
 /Users/shangminchen/care/src/main/java/com/example/care/entity/Journal.java
+/Users/shangminchen/care/src/main/java/com/example/care/entity/Tree.java
 /Users/shangminchen/care/src/main/java/com/example/care/entity/TreeNode.java
 /Users/shangminchen/care/src/main/java/com/example/care/entity/User.java
 /Users/shangminchen/care/src/main/java/com/example/care/repository/JournalRepository.java
 /Users/shangminchen/care/src/main/java/com/example/care/repository/TreeNodeRepository.java
+/Users/shangminchen/care/src/main/java/com/example/care/repository/TreeRepository.java
 /Users/shangminchen/care/src/main/java/com/example/care/repository/UserRepository.java
 /Users/shangminchen/care/src/main/java/com/example/care/service/JournalService.java
 /Users/shangminchen/care/src/main/java/com/example/care/service/TreeService.java
