@@ -3,7 +3,6 @@ package com.example.care.config;
 
 import com.example.care.entity.User;
 import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.Collection;
 import java.util.Map;
