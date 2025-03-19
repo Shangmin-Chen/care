@@ -1,8 +1,9 @@
-// Updated TreeNode.java
+// TreeNode.java
 package com.example.care.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "tree_nodes")
@@ -13,11 +14,11 @@ public class TreeNode {
     private Long id;
 
     @Column(nullable = true)
-    private String name; // New field for node name
+    private String name;
 
     @ManyToOne
     @JoinColumn(name = "tree_id", nullable = false)
-    private Tree tree; // New relationship to Tree
+    private Tree tree;
 
     @ManyToOne
     @JoinColumn(name = "user_email", nullable = false)
@@ -28,6 +29,6 @@ public class TreeNode {
     private TreeNode parent;
 
     @OneToOne(mappedBy = "treeNode", cascade = CascadeType.ALL)
+    @JsonManagedReference // This side is serialized
     private Journal journal;
-    
 }

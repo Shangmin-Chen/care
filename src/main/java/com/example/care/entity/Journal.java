@@ -1,8 +1,10 @@
+// Journal.java
 package com.example.care.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDateTime;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name = "journals")
@@ -10,11 +12,12 @@ import java.time.LocalDateTime;
 public class Journal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // Primary key
+    private Long id;
 
     @OneToOne
     @JoinColumn(name = "tree_node_id", nullable = false)
-    private TreeNode treeNode; // Foreign key to TreeNode
+    @JsonBackReference // This side is not serialized
+    private TreeNode treeNode;
 
     @Column(nullable = false)
     private String title;
