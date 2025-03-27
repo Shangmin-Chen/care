@@ -17,7 +17,7 @@
 
 ## Project Status
 - **Current Focus**: Developing and refining the backend tree logic for goal decomposition and task management.
-- **Next Feature**: Implementing a journal update API to allow users to modify existing journal entries.
+- **Next Feature**: Working on frontend for a node
 - **Future Plans**: Enhancing the frontend experience in the care-frontend repository.
 
 
