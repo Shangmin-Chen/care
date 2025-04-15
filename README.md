@@ -51,8 +51,7 @@ care/
    - Configure `src/main/resources/application.properties` (e.g., database connection).
    - Build and run the application:  
      ```bash
-     mvn clean package
-     java -jar target/care-0.0.1-SNAPSHOT.jar
+     mvn spring-boot:run
      ```
    - The app will be available at `http://localhost:8080`.
 
